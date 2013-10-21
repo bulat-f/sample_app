@@ -1,5 +1,7 @@
 require 'spec_helper'
 
+include Capybara::DSL
+
 describe "Static pages" do
 
   subject { page }

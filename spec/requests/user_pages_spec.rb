@@ -1,5 +1,7 @@
 require 'spec_helper'
 
+include Capybara::DSL
+
 describe "User pages" do
 
   subject { page }
