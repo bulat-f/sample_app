@@ -23,6 +23,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
