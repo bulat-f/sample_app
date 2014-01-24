@@ -28,7 +28,7 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.0.1)
-    bootstrap-sass (3.0.3.0)
+    bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
     bootstrap-will_paginate (0.0.10)
       will_paginate
@@ -158,7 +158,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
-  bootstrap-sass
+  bootstrap-sass (= 2.3.2.2)
   bootstrap-will_paginate
   capybara
   coffee-rails (~> 4.0.0)
