@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  has_many :microposts, dependent: :destroy
+
   has_secure_password
 
   before_save do |user| 
@@ -15,5 +17,9 @@ class User < ActiveRecord::Base
 
   def create_remember_token
     self.remember_token = SecureRandom.urlsafe_base64
+  end
+
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 end

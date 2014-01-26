@@ -1,0 +1,2 @@
+- if current_user?(micropost.user)
+  = link_to "delete", micropost, method: :delete, date: { confirm: "You sure?" }, title: micropost.content

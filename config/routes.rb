@@ -3,6 +3,7 @@ SampleApp::Application.routes.draw do
 
   resources :users
   resources :sessions, onli: [:new, :create, :destroy]
+  resources :microposts, onli: [:create, :destroy]
 
   get '/help'    => 'static_pages#help'
   get '/about'   => 'static_pages#about'
